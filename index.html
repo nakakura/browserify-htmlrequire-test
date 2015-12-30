@@ -1,0 +1,16 @@
+<html>
+<head>
+    <script src="build/js/hello.js"></script>
+    <script>
+        // browserify -r ./hello.js > built_hello.js
+        // としたので, モジュールを require するさいにも
+        // ./hello.js を指定する.
+        var hello = require('./hello.js');
+        console.log(hello());
+        var add = require('./add.js');
+        console.log(add);
+    </script>
+</head>
+<body>
+</body>
+</html>
